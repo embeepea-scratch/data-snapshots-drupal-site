@@ -1,0 +1,15 @@
+name = Global Dependencies
+description = Global component package for climate.gov
+core = 7.x
+package = climate.gov
+php = 5.2.4
+version = 7.x-0.1
+project = global_dependencies
+dependencies[] = features
+dependencies[] = taxonomy
+features[features_api][] = api:1
+features[taxonomy][] = author
+features[taxonomy][] = climate_and_energy_topics
+features[taxonomy][] = gcmd
+features[taxonomy][] = section
+features[taxonomy][] = tags
