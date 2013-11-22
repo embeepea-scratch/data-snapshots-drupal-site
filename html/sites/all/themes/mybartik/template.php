@@ -1,8 +1,10 @@
 <?php
 
 function mybartik_preprocess_page(&$variables) {
-  if ($variables['node']->type != "") {
-    $variables['theme_hook_suggestions'][] = "page__node_" . $variables['node']->type;
+  if (array_key_exists('node', $variables)) {
+    if ($variables['node']->type != "") {
+      $variables['theme_hook_suggestions'][] = "page__node_" . $variables['node']->type;
+    }
   }
 }
 
